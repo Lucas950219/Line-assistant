@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "properties": {
+    "action": {"type": "string", "enum": ["record", "list", "cancel", "chat"]},
+    "title": {"type": ["string", "null"]},
+    "date": {"type": ["string", "null"]},
+    "time": {"type": ["string", "null"]},
+    "location": {"type": ["string", "null"]},
+    "participants": {"type": ["string", "null"]},
+    "answer": {"type": ["string", "null"]}
+  },
+  "required": ["action", "title", "date", "time", "location", "participants", "answer"],
+  "additionalProperties": false
+}
